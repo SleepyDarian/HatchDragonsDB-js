@@ -1,10 +1,12 @@
 from flask import Flask, jsonify, request, render_template
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
 
 # Create Database
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///hatchdragons.db"
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{BASE_DIR}/../instance/hatchdragons.db"
 db = SQLAlchemy(app)
 
 class Dragon(db.Model):
