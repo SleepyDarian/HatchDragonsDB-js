@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <title>HatchDragonsDB</title>
+    <link rel="stylesheet" href="static/style.css">
   </head>
+  <h1>
+    HatchDragonsDB
+  </h1>
+  <h3>
+    Select your summon items to see the possible dragons.
+  </h3>
   <body>
     <label for="set-filter">Set:</label>
     <select name="set" id="set-filter">
@@ -38,9 +44,9 @@
     </select>
   </body>
 </html>
-<table id="results">
+<div id="results">
     <!-- filled by JS -->
-</table>
+</div>
 <script>
     let allDragons = [];  // stored here, in memory
 
@@ -58,7 +64,6 @@
     document.getElementById("essence-filter").addEventListener("change", applyFilters);
 
     function applyFilters() {
-        console.log("filters Applied");
         const set     = document.getElementById("set-filter").value;
         const rarity  = document.getElementById("rarity-filter").value;
         const essence = document.getElementById("essence-filter").value;
@@ -75,7 +80,19 @@
     function renderTable(dragons) {
         const table = document.getElementById("results");
         table.innerHTML = dragons.map(d =>
-            `<tr><td>${d.name}</td><td>${d.set}</td><td>${d.rarity}</td><td>${d.essence}</td></tr>`
+            `
+            <div style="display:flex; align-items:center; gap:8px;">
+                <img src="/static/dragons/${d.name}.jpg" width=64 height=64>
+                <div>
+                    <h4>${d.name}</h4>
+                    <p>${d.set}</p>
+                </div>
+                <div>
+                    <p>${d.rarity}</p>
+                    <p>${d.essence}</p>
+                </div>
+            </div>
+            `
         ).join("");
     }
 </script>
