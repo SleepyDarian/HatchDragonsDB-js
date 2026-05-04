@@ -44,7 +44,9 @@
     </select>
   </body>
 </html>
-<div id="results">
+<br>
+</br>
+<div class="flex-container" id="results">
     <!-- filled by JS -->
 </div>
 <script>
@@ -81,16 +83,12 @@
         const table = document.getElementById("results");
         table.innerHTML = dragons.map(d =>
             `
-            <div style="display:flex; align-items:center; gap:8px;">
+            <div class="card" gap:8px;">
                 <img src="/static/dragons/${d.name}.jpg" width=64 height=64>
-                <div>
-                    <h4>${d.name}</h4>
-                    <p>${d.set}</p>
-                </div>
-                <div>
-                    <p>${d.rarity}</p>
-                    <p>${d.essence}</p>
-                </div>
+                <span>${d.name}</span>
+                <span>${d.set}</span>
+                <span>${d.rarity}</span>
+                <span>${d.essence}</span>
             </div>
             `
         ).join("");

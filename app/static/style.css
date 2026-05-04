@@ -1,8 +1,26 @@
-h1, h3, h4, label, td, p {
+h1, h3, h4, label, td, span {
     color:wheat;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
     background-color:#102018;
+}
+
+.card {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:10px;
+    column-gap:10px;
+    border:1px solid #efef98;
+    border-radius: 10px;
+    background-color:#101418;
+}
+
+.flex-container {
+    flex-direction:column;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
 }
