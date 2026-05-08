@@ -83,12 +83,18 @@
         const table = document.getElementById("results");
         table.innerHTML = dragons.map(d =>
             `
-            <div class="card" gap:8px;">
+            <div class="card ${d.rarity.toLowerCase()}" gap:8px;">
                 <img src="/static/dragons/${d.name}.jpg" width=64 height=64>
-                <span>${d.name}</span>
-                <span>${d.set}</span>
-                <span>${d.rarity}</span>
-                <span>${d.essence}</span>
+                <div class="column">
+                    <div>
+                        <span>${d.name}</span>
+                    </div>
+                    <div>
+                        <span>${d.set}</span>
+                        <span>${d.rarity}</span>
+                        <span>${d.essence}</span>
+                    </div>
+                </div>
             </div>
             `
         ).join("");
