@@ -45,3 +45,9 @@ body {
     flex-direction: column;
     gap: 8px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
+    gap: 12px;
+}
