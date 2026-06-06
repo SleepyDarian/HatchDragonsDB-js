@@ -128,7 +128,7 @@ INSERT INTO dragons VALUES('Mosaic Hornbrow', 'Tropical', 'Rare', 'Earth', 'Rept
 INSERT INTO dragons VALUES('Giant Branchback', 'Tropical', 'Epic', 'Water', 'Coral');
 
 INSERT INTO dragons VALUES('Spiritpaw', 'Mighty', 'Common', 'Earth', 'Spirit');
-INSERT INTO dragons VALUES('Sjoodjur', 'Mighty', 'Uncommon', 'Water', 'Piscine');
+INSERT INTO dragons VALUES('Sjöodjur', 'Mighty', 'Uncommon', 'Water', 'Piscine');
 INSERT INTO dragons VALUES('Dire Ghostwing', 'Mighty', 'Rare', 'Wind', 'Avian');
 INSERT INTO dragons VALUES('Irongrip Shieldwing', 'Mighty', 'Epic', 'Earth', 'Insectile');
 INSERT INTO dragons VALUES('Ancient Gnarlroot', 'Mighty', 'Legendary', 'Earth', 'Arbor');
