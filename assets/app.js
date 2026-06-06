@@ -78,7 +78,7 @@ function renderTable(dragons = []) {
                 <img src="assets/dragons/${d.name}.jpg" width=64 height=64> 
                 <div class="column">
                     <div>
-                        <span>${d.name}</span> <span class="tag type ${d.dragon_type}">${d.dragon_type}</span>
+                        <span>${d.name}</span>  <a href="https://hatch-dragons.fandom.com/wiki/${d.name.replace(" ", "_")}"><span class="tag wiki">Wiki 🔗</span></a> <span class="tag type ${d.dragon_type}">${d.dragon_type}</span>
                     </div>
                     <div>
                         <span class="tag set ${d.dragon_set.replace(" ", "_")}">${d.dragon_set}</span>

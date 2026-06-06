@@ -63,6 +63,7 @@ body {
 .tag {
     display: inline-flex;
     align-items: center;
+    gap: 5px;
 
     padding: 3px 9px;
 
@@ -77,10 +78,9 @@ body {
     border: 1px solid #555;
 }
 
-.tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
+.tag.wiki {
+    background: #245a5c;
+    border-color: #3f9da0;
 }
 
 
