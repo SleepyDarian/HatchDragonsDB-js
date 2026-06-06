@@ -1,0 +1,284 @@
+h1, h3, h4, label, td, span {
+    color:wheat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+select, option {
+    color:white;
+    background-color:#4a7c87;
+    border-radius:4px;
+    border:#dce7eb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color:#204035;
+}
+
+.card {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:10px;
+    column-gap:10px;
+    border:2px solid #efef98;
+    border-radius: 8px;
+    background-color:#192026;
+}
+
+.card.common     { border-color: #998073; }
+.card.uncommon   { border-color: #936f45; }
+.card.rare       { border-color: #95b4c0; }
+.card.epic       { border-color: #f0d493; }
+.card.legendary  { border-color: #c485c6; color:#eae2b0;}
+
+.flex-container {
+    flex-direction:column;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    gap:4px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
+    gap: 12px;
+}
+
+.tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+
+/* base tag */
+.tag {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 3px 9px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    background: #333;
+    color: #eee;
+
+    border: 1px solid #555;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.tag.set::before, .tag.rarity::before, .tag.essence::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+
+    /*background-image: url("summon_items/default.webp");*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* SET COLORS */
+
+.tag.set.Woodland {
+    background: #245c35;
+    border-color: #3fa05d;
+}
+
+
+.tag.set.Forest_Lake {
+    background: #1e5f65;
+    border-color: #42c5d0;
+}
+
+
+.tag.set.Meadow {
+    background: #806c1e;
+    border-color: #d5bd4a;
+}
+
+
+.tag.set.Alpine {
+    background: #496d9b;
+    border-color: #8cc5ff;
+}
+
+
+.tag.set.Cave {
+    background: #4b3b5e;
+    border-color: #9a78c7;
+}
+
+
+.tag.set.Whiskers {
+    background: #6b3d28;
+    border-color: #d58a5e;
+}
+
+
+.tag.set.Tropical {
+    background: #12624c;
+    border-color: #42d8aa;
+}
+
+
+.tag.set.Mighty {
+    background: #5b2020;
+    border-color: #e06666;
+}
+
+
+.tag.set.Extravagant {
+    background: #66245f;
+    border-color: #d66bd0;
+}
+
+/* SET ICONS */
+
+.tag.set.Woodland::before {
+    background-image: url("summon_items/woodland.webp");
+}
+
+
+.tag.set.Forest_Lake::before {
+    background-image: url("summon_items/forest_lake.webp");
+}
+
+.tag.set.Meadow::before {
+    background-image: url("summon_items/meadow.webp");
+}
+
+
+.tag.set.Alpine::before {
+    background-image: url("summon_items/alpine.webp");
+}
+
+
+.tag.set.Cave::before {
+    background-image: url("summon_items/cave.webp");
+}
+
+
+.tag.set.Whiskers::before {
+    background-image: url("summon_items/whiskers.webp");
+}
+
+
+.tag.set.Tropical::before {
+    background-image: url("summon_items/tropical.webp");
+}
+
+
+.tag.set.Mighty::before {
+    background-image: url("summon_items/mighty.webp");
+}
+
+
+.tag.set.Extravagant::before {
+    background-image: url("summon_items/extravagant.webp");
+}
+
+
+/* RARITY COLORS*/
+
+.tag.rarity.Common {
+    background: #555;
+    border-color: #888;
+}
+
+
+.tag.rarity.Uncommon {
+    background: #6b4a24;
+    border-color: #d49e4e;
+}
+
+
+.tag.rarity.Rare {
+    background: #245a9b;
+    border-color: #65a7ff;
+}
+
+
+.tag.rarity.Epic {
+    background: #9b6612;
+    border-color: #ffd15c;
+}
+
+
+.tag.rarity.Legendary {
+    background: #6b2a9b;
+    border-color: #c176ff;
+}
+
+/* RARITY ICONS */
+
+.tag.rarity.Common::before {
+    background-image: url("summon_items/common.webp");
+}
+
+.tag.rarity.Uncommon::before {
+    background-image: url("summon_items/uncommon.webp");
+}
+
+.tag.rarity.Rare::before {
+    background-image: url("summon_items/rare.webp");
+}
+
+.tag.rarity.Epic::before {
+    background-image: url("summon_items/epic.webp");
+}
+
+.tag.rarity.Legendary::before {
+    background-image: url("summon_items/legendary.webp");
+}
+
+/* ESSENCE COLORS*/
+
+.tag.essence.Earth {
+    background: #70451e;
+    border-color: #b8793e;
+}
+
+
+.tag.essence.Wind {
+    background: #27666b;
+    border-color: #6ce1e7;
+}
+
+
+.tag.essence.Water {
+    background: #164f91;
+    border-color: #4ba3ff;
+}
+
+/* ESSENCE ICONS */
+
+.tag.essence.Earth::before {
+    background-image: url("summon_items/earth.webp");
+}
+
+.tag.essence.Wind::before {
+    background-image: url("summon_items/wind.webp");
+}
+
+.tag.essence.Water::before {
+    background-image: url("summon_items/water.webp");
+}
