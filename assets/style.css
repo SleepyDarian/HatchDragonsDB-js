@@ -3,6 +3,14 @@ h1, h3, h4, label, td, span {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.menu {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+    column-gap:10px;
+}
+
 select, option {
     color:white;
     background-color:#4a7c87;
@@ -281,4 +289,101 @@ body {
 
 .tag.essence.Water::before {
     background-image: url("summon_items/water.webp");
+}
+
+
+
+/* GRID - LIST */
+.view-toggle {
+    display: flex;
+    gap: 6px;
+
+    margin-bottom: 16px;
+
+    padding: 4px;
+
+    width: fit-content;
+
+    background: #4a7c87;
+    border-radius: 12px;
+
+    border: 1px solid #333;
+}
+
+
+.view-toggle button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 8px 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: transparent;
+    color: #aaa;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background .2s,
+        color .2s,
+        transform .1s;
+}
+
+
+.view-toggle button:hover {
+    background: #4a7b87;
+    color: white;
+}
+
+
+.view-toggle button:active {
+    transform: scale(0.95);
+}
+
+
+.view-toggle button.active {
+    background: #1b334e;
+    color: white;
+}
+
+.results.cards {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(250px, 1fr)
+    );
+
+    gap: 12px;
+}
+
+.results.list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+
+    border-radius: 12px;
+}
+
+.cards .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.list .card {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }

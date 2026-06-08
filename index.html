@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
+
     <link rel="stylesheet" href="assets/style.css">
-<meta charset="UTF-8">
-<title>Dragons DB</title>
+    <meta charset="UTF-8">
+    <title>Dragons DB</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+    <script src="assets/ui.js"></script>
+    <script src="assets/db.js"></script>
+    <script src="assets/app.js"></script>
 </head>
 
 <body>
 
-<h1> HatchDragonsDB</h1>
+    <h1> HatchDragonsDB</h1>
 
-<h3> Select your summon items to see the possible dragons. </h3>
+    <h3> Select your summon items to see the possible dragons. </h3>
 
-<label for="set-filter">Set:</label>
-    <select name="set" id="set-filter" class="filter">
-        <option value="">None</option>
-    </select>
-    <label for="rarity-filter">Rarity:</label>
-    <select id="rarity-filter" class="filter">
-        <option value="">None</option>
-    </select>
-    <label for="essence-filter">Essence:</label>
-    <select id="essence-filter" class="filter">
-        <option value="">None</option>
-    </select>
-<br>
-</br>
-<div class="flex-container" id="results">
-    <!-- filled by JS -->
-</div>
+    <div class="menu">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
-<script src="assets/ui.js"></script>
-<script src="assets/db.js"></script>
-<script src="assets/app.js"></script>
+        <div class="view-toggle">
+
+            <button id="card-view" class="active">
+                ⊞
+            </button>
+
+            <button id="list-view">
+                ☰
+            </button>
+
+        </div>
+        <div class="filters">
+            <label for="set-filter">Set:</label>
+            <select name="set" id="set-filter" class="filter">
+                <option value="">None</option>
+            </select>
+            <label for="rarity-filter">Rarity:</label>
+            <select id="rarity-filter" class="filter">
+                <option value="">None</option>
+            </select>
+            <label for="essence-filter">Essence:</label>
+            <select id="essence-filter" class="filter">
+                <option value="">None</option>
+            </select>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="results" class="results cards"></div>
 
 </body>
+
 </html>
