@@ -11,9 +11,9 @@ const UI = {
         this.setView(this.view);
 
         document
-            .getElementById("card-view")
+            .getElementById("grid-view")
             .addEventListener("click", () => {
-                this.setView("cards");
+                this.setView("grid");
             });
 
 
@@ -90,7 +90,7 @@ const UI = {
     setView(view) {
 
         this.results.classList.remove(
-            "cards",
+            "grid",
             "list"
         );
 
@@ -104,7 +104,7 @@ const UI = {
         
         
         document
-            .getElementById(`${view === "cards" ? "card" : "list"}-view`)
+            .getElementById(`${view === "grid" ? "grid" : "list"}-view`)
             .classList.add("active");
 
         localStorage.setItem("view", view);
