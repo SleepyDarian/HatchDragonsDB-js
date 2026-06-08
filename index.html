@@ -14,15 +14,15 @@
 <h3> Select your summon items to see the possible dragons. </h3>
 
 <label for="set-filter">Set:</label>
-    <select name="set" id="set-filter">
+    <select name="set" id="set-filter" class="filter">
         <option value="">None</option>
     </select>
     <label for="rarity-filter">Rarity:</label>
-    <select id="rarity-filter">
+    <select id="rarity-filter" class="filter">
         <option value="">None</option>
     </select>
     <label for="essence-filter">Essence:</label>
-    <select id="essence-filter">
+    <select id="essence-filter" class="filter">
         <option value="">None</option>
     </select>
 <br>
@@ -32,6 +32,8 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+<script src="assets/ui.js"></script>
+<script src="assets/db.js"></script>
 <script src="assets/app.js"></script>
 
 </body>
