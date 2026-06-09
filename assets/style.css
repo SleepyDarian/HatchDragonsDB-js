@@ -11,7 +11,7 @@ h1, h3, h4, label, td, span {
     column-gap:10px;
 }
 
-select, option {
+select, option, input, button {
     color:white;
     background-color:#4a7c87;
     border-radius:4px;
@@ -159,12 +159,26 @@ body {
     border-color: #d66bd0;
 }
 
+.tag.set.Companionship {
+    background: #66242f;
+    border-color: #d66b6b;
+}
+
+.tag.set.Zodiac {
+    background: #2b2466;
+    border-color: #7b6bd6;
+}
+
+.tag.set.Folklore {
+    background: #246635;
+    border-color: #6bd686;
+}
+
 /* SET ICONS */
 
 .tag.set.Woodland::before {
     background-image: url("summon_items/woodland.webp");
 }
-
 
 .tag.set.Forest_Lake::before {
     background-image: url("summon_items/forest_lake.webp");
@@ -174,34 +188,40 @@ body {
     background-image: url("summon_items/meadow.webp");
 }
 
-
 .tag.set.Alpine::before {
     background-image: url("summon_items/alpine.webp");
 }
-
 
 .tag.set.Cave::before {
     background-image: url("summon_items/cave.webp");
 }
 
-
 .tag.set.Whiskers::before {
     background-image: url("summon_items/whiskers.webp");
 }
-
 
 .tag.set.Tropical::before {
     background-image: url("summon_items/tropical.webp");
 }
 
-
 .tag.set.Mighty::before {
     background-image: url("summon_items/mighty.webp");
 }
 
-
 .tag.set.Extravagant::before {
     background-image: url("summon_items/extravagant.webp");
+}
+
+.tag.set.Companionship::before {
+    background-image: url("summon_items/companionship.webp");
+}
+
+.tag.set.Zodiac::before {
+    background-image: url("summon_items/zodiac.webp");
+}
+
+.tag.set.Folklore::before {
+    background-image: url("summon_items/folklore.webp");
 }
 
 
@@ -291,6 +311,44 @@ body {
     background-image: url("summon_items/water.webp");
 }
 
+/* SPECIAL TYPE TOOLTIP*/
+
+.tag.type.Special {
+    position: relative;
+    cursor: help;
+}
+
+
+.tag.type.Special::after {
+    content: "This is a special dragon, it is summoned only with the set summon item and the resulting dragon between all of the sets is defined by the current day of the year";
+
+    position: absolute;
+
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #111;
+    color: white;
+
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: normal;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity .2s ease;
+}
+
+
+.tag.type.Special:hover::after {
+    opacity: 1;
+}
 
 
 /* GRID - LIST */

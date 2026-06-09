@@ -62,34 +62,24 @@ const Database = {
 
         const params = [];
 
-
         if(filters.set) {
-
-            query += `
-            AND dragon_set = ?
-            `;
-
+            query += ` AND dragon_set = ? `;
             params.push(filters.set);
         }
 
-
         if(filters.rarity) {
-
-            query += `
-            AND rarity = ?
-            `;
-
+            query += ` AND rarity = ? `;
             params.push(filters.rarity);
         }
 
-
         if(filters.essence) {
-
-            query += `
-            AND essence = ?
-            `;
-
+            query += ` AND essence = ? `;
             params.push(filters.essence);
+        }
+
+        if(filters.type) {
+            query += ` AND dragon_type LIKE ? `;
+            params.push("%"+filters.type+"%");
         }
 
 

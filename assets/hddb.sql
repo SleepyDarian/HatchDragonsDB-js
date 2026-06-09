@@ -104,6 +104,11 @@ INSERT INTO dragons VALUES('Sooty Fieldpacer', 'Meadow', 'Common', 'Earth', 'Mam
 INSERT INTO dragons VALUES('Hook-tailed Bluebud', 'Meadow', 'Uncommon', 'Earth', 'Floral');
 INSERT INTO dragons VALUES('Great Fieldhoof', 'Meadow', 'Rare', 'Earth', 'Mammalian');
 
+INSERT INTO dragons VALUES('Teenysnout', 'Companionship', 'Uncommon', 'Earth', 'Special,Mammalian');
+INSERT INTO dragons VALUES('Azure Flipperwing', 'Companionship', 'Rare', 'Water', 'Special,Avian');
+INSERT INTO dragons VALUES('Saltskimmer', 'Companionship', 'Epic', 'Water', 'Special,Avian');
+INSERT INTO dragons VALUES('Gentle Goldenpaw', 'Companionship', 'Legendary', 'Earth', 'Special,Mammalian');
+
 INSERT INTO dragons VALUES('Scruffhorn', 'Alpine', 'Common', 'Earth', 'Mammalian');
 INSERT INTO dragons VALUES('Regal Preywing', 'Alpine', 'Common', 'Wind', 'Avian');
 INSERT INTO dragons VALUES('Spotty Plumpcap', 'Alpine', 'Uncommon', 'Earth', 'Fungi');
@@ -116,6 +121,25 @@ INSERT INTO dragons VALUES('Cavedrummer', 'Cave', 'Uncommon', 'Water', 'Piscine'
 INSERT INTO dragons VALUES('Pearl Armorback', 'Cave', 'Uncommon', 'Earth', 'Crustacean');
 INSERT INTO dragons VALUES('Dazzlecap', 'Cave', 'Rare', 'Earth', 'Fungi');
 INSERT INTO dragons VALUES('Watersnare', 'Cave', 'Epic', 'Water', 'Amphibian');
+
+INSERT INTO dragons VALUES('Solarback Capricorn', 'Zodiac', 'Epic', 'Earth', 'Special,Capricorn');
+INSERT INTO dragons VALUES('Moonlit Aquarius', 'Zodiac', 'Epic', 'Water', 'Special,Aquarius');
+INSERT INTO dragons VALUES('Galaxytail Pisces', 'Zodiac', 'Epic', 'Water', 'Special,Pisces');
+INSERT INTO dragons VALUES('Starryeye Aries', 'Zodiac', 'Epic', 'Earth', 'Special,Aries');
+INSERT INTO dragons VALUES('Moonshard Taurus', 'Zodiac', 'Epic', 'Earth', 'Special,Taurus');
+INSERT INTO dragons VALUES('Cloudwing Gemini', 'Zodiac', 'Epic', 'Wind', 'Special,Gemini');
+INSERT INTO dragons VALUES('Duskclaw Cancer', 'Zodiac', 'Epic', 'Water', 'Special,Cancer');
+INSERT INTO dragons VALUES('Skymane Leo', 'Zodiac', 'Epic', 'Earth', 'Special,Leo');
+INSERT INTO dragons VALUES('Nebula Virgo', 'Zodiac', 'Epic', 'Earth', 'Special,Virgo');
+INSERT INTO dragons VALUES('Stardust Libra', 'Zodiac', 'Epic', 'Wind', 'Special,Libra');
+INSERT INTO dragons VALUES('Twilight Scorpio', 'Zodiac', 'Epic', 'Earth', 'Special,Scorpio');
+INSERT INTO dragons VALUES('Dawn Sagittarius', 'Zodiac', 'Epic', 'Earth', 'Special,Sagittarius');
+
+INSERT INTO dragons VALUES('Shadegazer', 'Folklore', 'Epic', 'Earth', 'Special,Mörksugga');
+INSERT INTO dragons VALUES('Brightwolf', 'Folklore', 'Epic', 'Earth', 'Special,Wisp');
+INSERT INTO dragons VALUES('Hollowkin', 'Folklore', 'Epic', 'Earth', 'Special,Troll');
+INSERT INTO dragons VALUES('Oldenclaw', 'Folklore', 'Legendary', 'Wind', 'Special,Elder');
+INSERT INTO dragons VALUES('Mistdancer', 'Folklore', 'Legendary', 'Water', 'Special,Elf');
 
 INSERT INTO dragons VALUES('Inkwhisker', 'Whiskers', 'Uncommon', 'Earth', 'Feline');
 INSERT INTO dragons VALUES('Emberwhisker', 'Whiskers', 'Rare', 'Earth', 'Feline');

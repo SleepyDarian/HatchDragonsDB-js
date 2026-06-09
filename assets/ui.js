@@ -40,6 +40,11 @@ const UI = {
             essence:
                 document.getElementById(
                     "essence-filter"
+                ).value,
+
+            type:
+                document.getElementById(
+                    "type-filter"
                 ).value
         };
     },
@@ -75,7 +80,7 @@ const UI = {
                     </a>
                 </div>
                 <div>
-                    <span class="tag type ${d.dragon_type}">${d.dragon_type}</span>
+                    ` + d.dragon_type.split(",").map(t => `<span class="tag type ${t}">${t}</span>`).join(" ") + `
                 </div>
                 <div>
                     <span class="tag set ${d.dragon_set.replaceAll(" ", "_")}"> ${d.dragon_set} </span>
